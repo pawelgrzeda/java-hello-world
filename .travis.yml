@@ -17,3 +17,6 @@ script:
   - jdk_switcher use openjdk11
   - mvn clean package -U
   - java -jar ./target/hello-world-1.0.0-SNAPSHOT.jar
+  - ls -al /usr/bin
+  - ls -al ~
+  - ls -al ~/bin
