@@ -4,11 +4,16 @@ group: edge
 language: java
 
 script:
-  - mvn clean package
   - source ./jdk_switcher.sh
   - jdk_switcher use openjdk8
-  - java -version
+  - mvn clean package
   - java -jar ./target/hello-world-1.0.0-SNAPSHOT.jar
   - jdk_switcher use openjdk12
-  - java -version
+  - mvn clean package
+  - java -jar ./target/hello-world-1.0.0-SNAPSHOT.jar
+  - jdk_switcher use openjdk13
+  - mvn clean package
+  - java -jar ./target/hello-world-1.0.0-SNAPSHOT.jar
+  - jdk_switcher use openjdk11
+  - mvn clean package
   - java -jar ./target/hello-world-1.0.0-SNAPSHOT.jar
