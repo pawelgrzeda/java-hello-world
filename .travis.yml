@@ -1,0 +1,13 @@
+dist: freebsd
+group: edge
+
+language: cpp
+
+script:
+  - mvn clean package
+  - jdk_switcher use openjdk8
+  - java -version
+  - java -jar hello-world-1.0.0-SNAPSHOT.jar
+  - jdk_switcher use openjdk12
+  - java -version
+  - java -jar hello-world-1.0.0-SNAPSHOT.jar
