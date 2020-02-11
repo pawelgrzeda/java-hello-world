@@ -37,8 +37,8 @@ switch_to_specified_openjdk() {
 	JAVA_VERSION="$1"
 	JAVA_HOME="$2"
 	echo "Switching to Openjdk version ($JAVA_VERSION) with java_home ($JAVA_HOME)"
-	create_make_file
-	replace_vendor_and_version "$JAVA_VERSION" "$OPENJDK_VENDOR"
+	#create_make_file
+	#replace_vendor_and_version "$JAVA_VERSION" "$OPENJDK_VENDOR"
 	echo "Set JAVA_HOME to $JAVA_HOME"
 	set JAVA_HOME="$JAVA_HOME"
 	export JAVA_HOME
