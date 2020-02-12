@@ -20,4 +20,4 @@ script:
   - ls -al /usr/bin
   - ls -al ~
   - ls -al ~/bin
-  - ls -al /var/tmp | grep jdk
+  - ls -al /var/tmp
