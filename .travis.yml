@@ -4,20 +4,10 @@ group: edge
 language: java
 
 script:
-  - source ./jdk_switcher.sh
-  - jdk_switcher use openjdk8
-  - mvn clean package -U
-  - java -jar ./target/hello-world-1.0.0-SNAPSHOT.jar
-  - jdk_switcher use openjdk12
-  - mvn clean package -U
-  - java -jar ./target/hello-world-1.0.0-SNAPSHOT.jar
-  - jdk_switcher use openjdk13
-  - mvn clean package -U
-  - java -jar ./target/hello-world-1.0.0-SNAPSHOT.jar
-  - jdk_switcher use openjdk11
-  - mvn clean package -U
-  - java -jar ./target/hello-world-1.0.0-SNAPSHOT.jar
   - ls -al /usr/bin
   - ls -al ~
   - ls -al ~/bin
   - ls -al /var/tmp
+  - ls -al /usr/local/bin
+  - env
+  - echo $PATH
