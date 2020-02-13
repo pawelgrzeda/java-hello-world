@@ -4,10 +4,9 @@ group: edge
 language: java
 
 script:
-  - ls -al /usr/bin
-  - ls -al ~
-  - ls -al ~/bin
-  - ls -al /var/tmp
-  - ls -al /usr/local/bin
-  - env
-  - echo $PATH
+  - jdk_switcher use openjdk8
+  - java -version
+  - jdk_switcher use openjdk11
+  - java -version
+  - jdk_switcher use openjdk13
+  - java -version
