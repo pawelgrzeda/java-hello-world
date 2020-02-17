@@ -4,9 +4,6 @@ group: dev
 language: java
 
 script:
-  - diff jdk_switcher.sh /opt/jdk_switcher/jdk_switcher.sh
-  - source /opt/jdk_switcher/jdk_switcher.sh
-  - cat /opt/jdk_switcher/jdk_switcher.sh
   - jdk_switcher use openjdk8
   - java -version
   - jdk_switcher use openjdk11
