@@ -1,5 +1,5 @@
 dist: freebsd
-group: dev
+group: edge
 
 language: java
 
